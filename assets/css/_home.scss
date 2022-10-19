@@ -1,0 +1,90 @@
+.home-banner{
+    // height: 100vh;
+}
+
+
+// Invest Section
+.invest-section{
+    height: 750px;
+    min-height: 580px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    .swiper-container{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .invest-field__desc {
+        background-size: cover;
+        background-position: center center;
+        width: 20%;
+        position: relative;
+        height: 100%;
+        padding: 78px 40px;
+        background:$global_color;
+        .section-text__title{
+            font-size: 30px;
+            color:#fff;
+        }
+        .section-text__label {
+            color: #ffffff99;
+            margin-top: 10px;
+        }
+    }
+    .invest-field__content {
+        height: 100%;
+        width: 80%;
+        position: relative;
+    }
+    .invest-field__item {
+        display: block;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        transition: all 0.3s ease;
+        &:before{
+            display: none;
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, #0051A4 100%);
+        }
+    }
+    .swiper-slide{
+        height: 100%;
+       
+        &:hover{
+            transition: all 0.3s ease;
+            .invest-field__item{
+                &::before{
+                    display: block;
+                }
+            }
+        }
+    }
+    .invest-field__text {
+        position: absolute;
+        z-index: 20;
+        display: block;
+        right: 25px;
+        bottom: 55px;
+        left: 25px;
+        color: #ffffffcc;
+    }
+    .invest-field__name{
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    .invest-field__type{
+        margin-bottom: 20px;
+    }
+}
+
+
+// Section Project
