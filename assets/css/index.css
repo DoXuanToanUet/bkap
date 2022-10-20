@@ -2292,6 +2292,9 @@ footer .copyright {
   background-position: center center;
   background-repeat: no-repeat;
 }
+.news-page .breadcrumb_link {
+  margin-bottom: 20px;
+}
 .news-page .breadcrumb_link a {
   color: #fff;
   font-size: 12px;
