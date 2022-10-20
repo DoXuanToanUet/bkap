@@ -40,6 +40,59 @@
        
        
     });
-   
+    
+    new Swiper('.news-project-swiper', {
+            slidesPerView: 2,
+            // slidesPerView: "auto",
+
+            spaceBetween: 20,
+
+            pagination: {
+              el: '#project-tab-1 .pagination-page',
+              clickable: true,
+            },
+            breakpoints: {
+
+              320: {
+                slidesPerView: 1,
+                slidesPerColumn: 1,
+              },
+              480: {
+                slidesPerView: 1,
+                slidesPerColumn: 1,
+              },
+              768: {
+                slidesPerView: 1,
+                slidesPerColumn: 1,
+              },
+            }
+    });
+    
+    new Swiper('.news-thumbnail-swiper', {
+        slidesPerView: 4,
+        // slidesPerView: "auto",
+
+        spaceBetween: 20,
+
+        pagination: {
+          el: '#project-tab-1 .pagination-page',
+          clickable: true,
+        },
+        breakpoints: {
+
+          320: {
+            slidesPerView: 1,
+            slidesPerColumn: 1,
+          },
+          480: {
+            slidesPerView: 1,
+            slidesPerColumn: 1,
+          },
+          768: {
+            slidesPerView: 1,
+            slidesPerColumn: 1,
+          },
+        }
+});
     
 })(jQuery);
