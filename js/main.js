@@ -93,6 +93,25 @@
             slidesPerColumn: 1,
           },
         }
-});
+    });
+
+   
     
 })(jQuery);
+
+
+var newsProjectSlider = new Swiper('.news-project-swiper', {
+  slidesPerView: 1,
+  // slidesPerView: "auto",
+  
+  spaceBetween: 20,
+  // pagination: {
+  //   el: '#project-tab-1 .pagination-page',
+  //   clickable: true,
+  // },
+  navigation: {
+      nextEl: '.news-project-button-next',
+      prevEl: '.news-project-button-prev',
+  },
+    
+});

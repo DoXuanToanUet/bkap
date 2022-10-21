@@ -1,35 +1,3 @@
-.news-page {
-    position: relative;
-    width: 100%;
-    height: 330px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    .breadcrumb_link{
-        margin-bottom: 20px;
-    }
-    .breadcrumb_link a {
-        color: #fff;
-        font-size: 12px;
-        text-transform: uppercase;
-        padding: 0 20px 0 0px;
-    }
-    .title{
-        font-size: 30px;
-        line-height: 48px;
-        color: #fff;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-    }
-    .news-page-banner{
-        position: absolute;
-        z-index: 2;
-        top: auto;
-        bottom: 30px;
-        left: calc(100% / 12);
-        right: calc((100% / 12) * 4.5);
-    }
-}
 
 .news-container{
     padding: 40px 0px;

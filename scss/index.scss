@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import "../scss/common/common";
+@import "../scss/common/reset";
+@import "../scss/common/grid";
+@import "../scss/header";
+@import "../scss/footer";
+@import "../scss/home";
+@import "../scss/tintuc";
+@import "../scss/bantin";
+
+html{
+    font-family: "Roboto", sans-serif;
+    
+}
+
+// Breadcrumb Common
+.news-page {
+    position: relative;
+    width: 100%;
+    height: 330px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    .breadcrumb_link{
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    .breadcrumb_link a {
+        // color: #fff;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 500;
+    }
+    .title{
+        font-size: 30px;
+        line-height: 48px;
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+    .news-page-banner{
+        position: absolute;
+        z-index: 2;
+        top: auto;
+        bottom: 30px;
+        left: calc(100% / 12);
+        right: calc((100% / 12) * 4.5);
+    }
+}
