@@ -25,7 +25,7 @@
         .header-bottom{
             li{
                 position: relative;
-                padding-right: 60px;
+                padding-right: 30px;
                 a{
                     color: #fff;
                     
@@ -46,7 +46,7 @@
                 border-radius: 10px;
                 transform: translateX(-50%);
                 li{
-                    padding: 13px 20px;
+                    padding: 8px 16px;
                     font-size: 13px;
                 }
                 a{
@@ -55,15 +55,21 @@
                     &:hover{
                         color: $hover_menu;
                     }
-        
                 }
             }
         }
         .header-language{
             position: absolute;
             right: 30px;
-            top: 13px;
+            top: 30px;
             transition: 0.5s;
+        }
+    }
+    #menu-header-menu{
+        gap: 20px;
+        li a{
+            color: #fff;
+            font-size: 12px;
         }
     }
 }
@@ -75,4 +81,104 @@
     right: 0px;
     top: 50%;
     transform: translateY(-50%);
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: $global_color;
+        color: #fff;
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+.scrolltoTop{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: $global_color;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    div{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.header-menu-mobile {
+    background: $global_color;
+    width: 100%;
+    height: 51px;
+    bottom: 0;
+    position: fixed;
+    z-index: 999;
+    display: none;
+}
+.header-bottom.header-bottom-ipad{
+    display: none;
+}
+@media (max-width:991px) {
+    // .header-menu-mobile {
+    //     display: block;
+    // }
+    .header-social{
+        // display: none;
+    }
+    .header-bottom,.header-top{
+        display: none;
+    }
+    .header-bottom-ipad{
+        display: none;
+        position: fixed;
+        top: 75px;
+        right: 20px;
+        >ul{
+           
+            flex-direction: column;
+            background: $global_color;
+            width: 500px;
+            li{
+                color: #fff;
+                padding: 10px 20px;
+                .sub-menu{
+                    position: relative;
+                    top: unset;
+                    display: none;
+                    padding-left: 20px;
+                }    
+            }
+            .active-menu {
+                .sub-menu{
+                    display: block !important;
+                    
+                }
+            }
+        }
+    }
+    .humberger .line {
+        width: 30px;
+        height: 2px;
+        background: #fff;
+        display: block;
+        margin-bottom: 8px;
+        webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+    .active-menu-icon{
+        display: block;
+    }
+    .ipad-menu{
+        display: flex;
+        position: absolute;
+        top: 40px;
+        transform: translateY(-50%);
+        right: 20px;
+    }
 }

@@ -13,6 +13,12 @@
   .text-center{
     text-align: center;
   }
+ .text-uppercase{
+   text-transform: uppercase;
+ }
+ .fw-bold{
+  font-weight: bold;
+ }
   @media (min-width: 576px) {
     .container-master {
       max-width: 540px;

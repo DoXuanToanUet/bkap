@@ -11,6 +11,7 @@
 @import "../scss/gioithieu";
 @import "../scss/company";
 @import "../scss/partner";
+@import "../scss/leader";
 
 html{
     font-family: "Roboto", sans-serif;
@@ -18,7 +19,33 @@ html{
 }
 p{
     line-height: 30px;
+    // padding-bottom: 20px;
 }
+.section-post{
+    h1,h2,h3,h4,h5,h6{
+        padding-bottom: 20px;
+    }
+    p{
+        padding-bottom: 20px;
+    }
+}
+.section-common{
+    padding: 40px 0px;
+}
+// Common font-size, padding 
+.fs-22{
+    font-size: 22px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.p-2{
+    padding: 20px auto;
+}
+
 .viewmore-btn {
     min-width: 115px;
     padding: 0 20px;
