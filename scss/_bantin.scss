@@ -119,3 +119,9 @@
         }
     }
 }
+
+@media (max-width:575px) {
+    .news-project .news-hot .list .title{
+        line-height: 1.25;
+    }
+}

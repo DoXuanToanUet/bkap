@@ -98,3 +98,23 @@ p{
         right: calc((100% / 12) * 4.5);
     }
 }
+
+
+@media (max-width:575px){
+    .news-page {
+        .breadcrumb_link{
+            margin-bottom: 10px;
+        }
+        .news-page-banner{
+            width: 100%;
+        }
+        .title{
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: 30px;
+        }
+    }
+    .display-none-mb{
+        display: none;
+    }
+}
