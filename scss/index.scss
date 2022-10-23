@@ -12,6 +12,7 @@
 @import "../scss/company";
 @import "../scss/partner";
 @import "../scss/leader";
+@import "../scss/contact";
 
 html{
     font-family: "Roboto", sans-serif;
@@ -106,7 +107,9 @@ p{
             margin-bottom: 10px;
         }
         .news-page-banner{
-            width: 100%;
+            left: unset;
+            right: unset;
+            padding: 20px;
         }
         .title{
             font-size: 16px;

@@ -24,3 +24,21 @@
     }
 }
 
+@media (max-width:575px){
+    .company-section {
+        .item{
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: 10px;
+            gap: 10px;
+            .title{
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .detail{
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+    }
+}

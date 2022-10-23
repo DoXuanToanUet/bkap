@@ -518,6 +518,10 @@ template {
   display: none;
 }
 
+button {
+  border: none;
+}
+
 .container-master {
   width: 100%;
   padding-right: 15px;
@@ -3779,6 +3783,27 @@ footer .copyright {
   margin-bottom: 20px;
 }
 
+@media (max-width: 575px) {
+  .company-section .item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 10px;
+    gap: 10px;
+  }
+  .company-section .item .title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .company-section .item .detail {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
 .partner-section {
   padding: 50px;
 }
@@ -3873,6 +3898,73 @@ footer .copyright {
 
 .leader-section .member-section {
   padding: 30px;
+}
+
+@media (max-width: 575px) {
+  .leader-section .person {
+    padding: 15px;
+  }
+  .leader-section .member-section {
+    padding: 30px 0px;
+  }
+}
+
+.contact-us .contact-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contact-us form {
+  width: 100%;
+}
+
+.contact-us form input {
+  width: 100%;
+  padding: 12px 22px;
+  background: #f5f5f5;
+  border: none;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  outline: none;
+  height: 54px;
+}
+
+.contact-us form input:focus {
+  border: none;
+}
+
+.contact-us form textarea {
+  width: 100%;
+  border: 1px solid #e1e1e1;
+  padding: 20px;
+  outline: none;
+}
+
+.contact-us .btn-submit-contact {
+  margin: 30px 0px;
+  padding: 15px 45px;
+  background: #164FA3;
+  color: #fff;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-us .btn-submit-contact:hover {
+  background: #103875;
+}
+
+.contact-us .address {
+  background: #164FA3;
+  border-radius: 16px;
+  padding: 15px;
+  color: #fff;
+}
+
+.contact-us .address ul li {
+  color: #fff;
+  padding: 10px 0px;
 }
 
 html {
@@ -3973,7 +4065,9 @@ p {
     margin-bottom: 10px;
   }
   .news-page .news-page-banner {
-    width: 100%;
+    left: unset;
+    right: unset;
+    padding: 20px;
   }
   .news-page .title {
     font-size: 16px;
