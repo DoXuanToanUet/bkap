@@ -3341,6 +3341,10 @@ footer .copyright {
 }
 
 @media (max-width: 575px) {
+  .project-section::before {
+    width: 100%;
+    left: 0px;
+  }
   .invest-section {
     height: unset;
     -webkit-box-orient: vertical;

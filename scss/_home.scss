@@ -276,6 +276,12 @@
     }
 }
 @media (max-width:575px){
+    .project-section{
+        &::before{
+            width: 100%;
+            left: 0px;
+        }
+    }
     .invest-section{
         height: unset;
         flex-direction: column;
